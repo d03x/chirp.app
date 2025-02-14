@@ -1,0 +1,35 @@
+@use "abstract/media-query.scss" as *;
+.container {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--c-primary);
+  bottom: 0;
+  padding: 0.5em 2em;
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mq("xx-large") {
+      max-width: 1300px;
+      margin: auto;
+    }
+    @include mq("xx-large") {
+      max-width: 1300px;
+      margin-left: auto;
+    }
+    .text {
+      margin-left: 14.5em;
+    }
+    h1 {
+      line-height: 1.5;
+      font-size: var(--fs-h1);
+    }
+    p {
+      font-size: var(--fs-nano);
+    }
+  }
+}

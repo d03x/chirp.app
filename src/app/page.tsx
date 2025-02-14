@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 import { Explore } from "@/features/explore";
 import { Metadata } from "next";
 export default function Home() {
-	return <Explore />;
+	return <Expslore />;
 }
