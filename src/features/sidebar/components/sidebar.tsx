@@ -17,7 +17,7 @@ export default function Sidebar() {
 					<Link href={"#"}>Privacy And policy</Link>
 					<Link href={"#"}>Aksebilitas</Link>
 					<Link href={"#"}>Info Iklan</Link>
-					<Link href={"#"}>&copy;2025 Dadan Dev</Link>
+					<span>&copy;2025 digicylab lnc</span>
 				</div>
 			</div>
 		</header>

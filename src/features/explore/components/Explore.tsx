@@ -1,4 +1,7 @@
 "use client";
+
+import { Logo } from "@/features/sidebar";
+
 export default function Explore() {
-	return <h1>Explore</h1>;
+	return <Logo />;
 }

@@ -1,4 +1,4 @@
-import styles from "./styles/navbar.module.scss";
+import styles from "./styles/nav-item.module.scss";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -8,11 +8,17 @@ interface INavItem {
 	href: string;
 	isActive: boolean;
 }
-export const NavItem = ({ text, icon, href, isActive }: INavItem) => {
+const NavItem = ({ text, icon, href, isActive }: INavItem) => {
 	return (
-		<Link className={styles["nav-item"]} href={href}>
+		<Link
+			aria-label="Menu Link"
+			role="menu-link"
+			className={styles.container}
+			href={href}
+		>
 			<span>{icon}</span>
 			<span>{text}</span>
 		</Link>
 	);
 };
+export default NavItem;

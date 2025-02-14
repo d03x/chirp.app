@@ -5,49 +5,5 @@
   align-items: center;
   row-gap: 0.2em;
   justify-content: center;
-  .nav-item {
-    display: flex;
-    align-items: center;
-
-    flex-direction: column;
-    cursor: pointer;
-    border-radius: 0.5em;
-    &:focus-visible {
-      outline: 2px solid var(--c-primary);
-      outline-offset: -2px;
-      background-color: var(--c-nav-hover);
-    }
-    &:hover {
-      background-color: var(--c-nav-hover);
-    }
-    &:active {
-      background-color: var(--c-nav-active);
-    }
-    width: 90%;
-    padding: 0.4em;
-    svg {
-      width: 1.4em !important;
-      height: 1.4em !important;
-      fill: var(--c-teritary);
-      @include mq("xx-large") {
-        width: 1.8em !important;
-        height: 1.8em !important;
-      }
-    }
-    span {
-      &:last-child {
-        font-size: var(--fs-pico);
-      }
-    }
-    @include mq("xx-large") {
-      flex-direction: row;
-      column-gap: 1em;
-      span {
-        &:last-child {
-          font-weight: var(--fw-400);
-          font-size: var(--fs-milli);
-        }
-      }
-    }
-  }
+  
 }
