@@ -1,0 +1,66 @@
+@use "./font-size" as *;
+@font-face {
+  font-family: "TwitterChirp";
+  src: url("../../../public/fonts/Chirp-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  src: url("../../../public/fonts/Chirp-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  src: url("../../../public/fonts/Chirp-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  src: url("../../../public/fonts/Chirp-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TwitterChirp";
+  src: url("../../../public/fonts/Chirp-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-base: "TwitterChirp";
+  ///////////////////////////
+  /// FONT SIZE
+  //////////////////////////
+  --fs-kilo: #{$md-kilo};
+  --fs-h1: #{$md-h1};
+  --fs-h2: #{$md-h2};
+  --fs-h3: #{$md-h3};
+  --fs-base: #{$md-base};
+  --fs-large: #{$md-large};
+  --fs-milli: #{$md-milli};
+  --fs-micro: #{$md-micro};
+  --fs-pico: #{$md-pico};
+  --fs-nano: #{$md-nano};
+  ////////////////////////
+  /// FONT WEIGHT
+  ///////////////////////
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+  //font-apa aja lah
+}

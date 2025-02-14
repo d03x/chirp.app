@@ -1,0 +1,64 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": []
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "tab"
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "overrides": [
+    {
+      "include": ["*.tsx", "*.jsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off",
+            "noVar": "error",
+            "noUnusedTemplateLiteral": "error",
+            "useFragmentSyntax": "error"
+          }
+        }
+      }
+    }
+  ],
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "style": {
+        
+        "noNamespace": "error",
+        "noUnusedTemplateLiteral": "error",
+        "noVar": "error",
+        "useFragmentSyntax": "error",
+        "useFilenamingConvention": "error",
+        "useImportType": "info"
+      },
+      "complexity": {
+        "noEmptyTypeParameters": "error",
+        "noBannedTypes": "error"
+      },
+      "recommended": true,
+      "suspicious": {
+        
+        "noDebugger": "error",
+        "noConsoleLog": "info"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  }
+}

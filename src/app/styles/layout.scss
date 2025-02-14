@@ -1,0 +1,53 @@
+@use "main.scss";
+@use "abstract/media-query.scss" as *;
+:root {
+  --nav-height: 50px;
+}
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--font-base);
+  color: var(--c-secondary);
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: var(--c-background);
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include mq("small") {
+      grid-template-columns: 70px auto;
+    }
+    @include mq("medium") {
+      // grid-template-columns: 1fr auto;
+    }
+    @include mq("large") {
+      grid-template-columns: max-content auto 300px;
+    }
+    @include mq("xx-large") {
+      margin: auto;
+      max-width: 1465px;
+      grid-template-columns: 260px auto 400px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-left: 1px solid rgba(128, 128, 128, 0.18);
+  background: var(--c-background);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--c-border);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--color-secondary-bg);
+}

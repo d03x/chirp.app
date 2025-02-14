@@ -1,0 +1,35 @@
+{
+  "name": "1cuk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "bunx biome lint --write --unsafe ./src",
+    "format": "bunx biome format --write --no-errors-on-unmatched ./src"
+  },
+  "dependencies": {
+    "@types/react-icons": "^3.0.0",
+    "axios": "^1.7.9",
+    "motion": "^12.4.2",
+    "next": "15.1.7",
+    "nextjs-toploader": "^3.7.15",
+    "prettier": "^3.5.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "sass": "^1.85.0",
+    "swr": "^2.3.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "typescript": "^5"
+  }
+}

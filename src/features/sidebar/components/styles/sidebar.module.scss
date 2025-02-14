@@ -1,0 +1,55 @@
+@use "abstract/media-query.scss" as *;
+.container {
+  .footer {
+    margin-top: 1.5em;
+    border-top: 1px solid var(--c-border);
+    display: none;
+    @include mq("xx-large") {
+      display: block;
+    }
+  }
+  .decription {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--c-tertiary);
+    column-gap: 0.75em;
+    padding: 0.5em 1em;
+    a {
+      cursor: pointer;
+      margin: 2px 0;
+      &:focus-visible {
+        text-decoration: underline;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      font-size: var(--fs-pico);
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  position: sticky;
+  overflow-y: auto;
+  border-right: 1px solid var(--c-border);
+  max-height: 100vh;
+  top: 0;
+  .navbar {
+  }
+  .logo {
+    margin-bottom: 0.5em;
+    padding: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq("xx-large") {
+      align-items: start;
+      justify-content: start;
+    }
+    svg {
+      color: var(--c-primary) !important;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

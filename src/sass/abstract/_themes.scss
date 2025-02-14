@@ -1,0 +1,82 @@
+@use "./colors" as *;
+
+:root {
+  //default theme
+
+  --c-light: oklch(1 0 0 / 1);
+  --c-light-hover: oklch(0.97 0 264.54 / 1);
+  --c-light-active: oklch(0.93 0.04 237.56 / 1);
+
+  --c-dark: oklch(0 0 0 / 1);
+  --c-dark-hover: oklch(0.17 0 264.45 / 1);
+  --c-dark-active: oklch(0.23 0.05 241.89 / 1);
+
+  --c-dim: oklch(0.24 0.03 248.99 / 1);
+  --c-dim-hover: oklch(0.29 0.04 243.81 / 1);
+  --c-dim-active: oklch(0.33 0.06 243.23 / 1);
+
+  --c-blue: oklch(0.67 0.16 245.54 / 1);
+  --c-blue-hover: oklch(0.62 0.15 245.14 / 1);
+  --c-blue-active: oklch(0.57 0.14 245.22 / 1);
+  --c-yellow: oklch(0.88 0.18 94.02 / 1);
+  --c-rose: oklch(0.64 0.25 2.08 / 1);
+  --c-violet: oklch(0.59 0.24 285.74 / 1);
+  --c-orange: oklch(0.72 0.19 50.54 / 1);
+  --c-green: oklch(0.7 0.16 160.58 / 1);
+  --c-red: oklch(0.62 0.24 25.77 / 1);
+  --c-red-hover: oklch(0.57 0.22 25.78 / 1);
+  --c-red-active: oklch(0.52 0.2 25.39 / 1);
+
+  --c-modal-background: oklch(0.54 0.04 245.92 / 0.4);
+  --c-modal: oklch(0.25 0.01 276.7 / 1);
+  --c-modal-opacity: oklch(0.25 0.01 276.7 / 0.9);
+  --c-modal-hover: oklch(0.32 0.01 278.24 / 1);
+  --c-modal-active: oklch(0.38 0.01 285.99 / 1);
+
+  --c-modal-actions-hover: oklch(0.35 0.01 278.3 / 1);
+  --c-modal-actions-active: oklch(0.47 0.01 258.34 / 1);
+
+  --c-action: oklch(0.15 0.01 247.26 / 0.6);
+  --c-action-hover: oklch(0.21 0.01 236.86 / 0.6);
+  --c-action-active: oklch(0.26 0.01 258.36 / 0.7);
+
+  --c-login-hover: oklch(0.69 0.15 243.62 / 1);
+  --c-login-active: oklch(0.72 0.14 241.71 / 1);
+  --c-login-border: oklch(0.77 0.11 239.8 / 1);
+
+  --c-signup-hover: oklch(0.89 0 214.33 / 1);
+  --c-signup-active: oklch(0.81 0 219.54 / 1);
+
+  --c-auth-button-hover: oklch(0.92 0 0 / 1);
+  --c-auth-button-active: oklch(0.85 0 0 / 1);
+
+  //default thme for web
+  --c-background: #{$light-background};
+  --c-primary: #{$light-primary};
+  --c-primary-hover: #{$light-primary-hover};
+  --c-primary-primary-active: #{$light-primary-active};
+  --c-primary-disabled: #{$light-primary-disabled};
+  --c-primary-opacity: #{$light-primary-opacity};
+  --c-secondary: #{$light-secondary};
+  --c-secondary-hover: #{$light-secondary-hover};
+  --c-secondary-active: #{$light-secondary-active};
+  --c-tertiary: #{$light-tertiary};
+  --c-nav-hover: #{$light-nav-hover};
+  --c-nav-active: #{$light-nav-active};
+  --c-border: #{$light-border};
+  @media (prefers-color-scheme: dark) {
+    --c-background: #{$dark-background};
+    --c-primary: #{$dark-primary};
+    --c-primary-hover: #{$dark-primary-hover};
+    --c-primary-primary-active: #{$dark-primary-active};
+    --c-primary-disabled: #{$dark-primary-disabled};
+    --c-primary-opacity: #{$dark-primary-opacity};
+    --c-secondary: #{$dark-secondary};
+    --c-secondary-hover: #{$dark-secondary-hover};
+    --c-secondary-active: #{$dark-secondary-active};
+    --c-tertiary: #{$dark-tertiary};
+    --c-nav-hover: #{$dark-nav-hover};
+    --c-nav-active: #{$dark-nav-active};
+    --c-border: #{$dark-border};
+  }
+}
