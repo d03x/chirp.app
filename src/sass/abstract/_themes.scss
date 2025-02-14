@@ -64,6 +64,8 @@
   --c-nav-hover: #{$light-nav-hover};
   --c-nav-active: #{$light-nav-active};
   --c-border: #{$light-border};
+  --c-auth-border:#{$light-auth-border};
+
   @media (prefers-color-scheme: dark) {
     --c-background: #{$dark-background};
     --c-primary: #{$dark-primary};
@@ -78,5 +80,6 @@
     --c-nav-hover: #{$dark-nav-hover};
     --c-nav-active: #{$dark-nav-active};
     --c-border: #{$dark-border};
+    --c-auth-boder:#{$dark-auth-border};
   }
 }

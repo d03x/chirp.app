@@ -1,0 +1,28 @@
+.container {
+  padding: 0.7em;
+  border-radius: 100vmax;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  place-content: center;
+  gap: 0.75em;
+  background-color: var(--c-light);
+  grid-template-columns: auto auto;
+  border: 1px solid var(--c-auth-border);
+  color: var(--c-dark);
+
+  &:hover {
+    background-color: var(--c-auth-button-hover);
+  }
+  &:active {
+    background-color: var(--c-auth-button-active);
+  }
+  span {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-milli);
+  }
+  svg {
+    width: var(--fs-h2);
+    height: var(--fs-h2);
+  }
+}

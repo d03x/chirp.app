@@ -19,7 +19,8 @@ $light-nav-active: oklch(0.86 0 247.84 / 1);
 
 $light-border: oklch(0.96 0 214.33 / 1);
 $light-auth-border: oklch(0.88 0.01 228.95 / 1);
-
+$light-connect-button-hover: #272c30;
+$light-connect-button-active: #3f4347;
 
 /////////////////////////////////
 /// THEME DARK
@@ -44,3 +45,5 @@ $dark-nav-active: oklch(0.3 0 197.08 / 1);
 
 $dark-border: oklch(0.32 0.01 240.08 / 1);
 $dark-auth-border: oklch(0.33 0.01 248.03 / 1);
+$dark-connect-button-hover: #d7dbdc;
+$dark-connect-button-active: #bfc2c3
