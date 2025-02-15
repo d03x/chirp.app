@@ -19,7 +19,7 @@ const NavItem = ({ text, icon, href, isActive }: INavItem) => {
 			href={href}
 		>
 			<span>{icon}</span>
-			<span>{text}</span>
+			<span className="nav_item_text">{text}</span>
 		</Link>
 	);
 };

@@ -1,46 +1,65 @@
 @use "abstract/media-query.scss" as *;
 .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 0.5em;
+  &:focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: -2px;
+    background-color: var(--c-nav-hover);
+  }
+  &:hover {
+    color: var(--c-primary);
+  }
+  
 
-    flex-direction: column;
-    cursor: pointer;
-    border-radius: 0.5em;
-    &:focus-visible {
-      outline: 2px solid var(--c-primary);
-      outline-offset: -2px;
-      background-color: var(--c-nav-hover);
+  width: 90%;
+  padding: 0.4em;
+  svg {
+    width: 1.4em !important;
+    height: 1.4em !important;
+    fill: var(--c-teritary);
+    @include mq("xx-large") {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
     }
-    &:hover {
-      background-color: var(--c-nav-hover);
+  }
+  span {
+    &:last-child {
+      font-size: var(--fs-pico);
     }
-    &:active {
-      background-color: var(--c-nav-active);
-    }
-    width: 90%;
-    padding: 0.4em;
-    svg {
-      width: 1.4em !important;
-      height: 1.4em !important;
-      fill: var(--c-teritary);
-      @include mq("xx-large") {
-        width: 1.5rem !important;
-        height: 1.5rem !important;
-      }
-    }
+  }
+  @include mq("xx-large") {
+    flex-direction: row;
+    column-gap: 1em;
     span {
       &:last-child {
-        font-size: var(--fs-pico);
-      }
-    }
-    @include mq("xx-large") {
-      flex-direction: row;
-      column-gap: 1em;
-      span {
-        &:last-child {
-          font-weight: var(--fw-400);
-          font-size: var(--fs-milli);
-        }
+        font-weight: var(--fw-400);
+        font-size: var(--fs-milli);
       }
     }
   }
+  span{
+    &:last-child{
+      display: none;
+    }
+  }
+  @include mq("small") {
+    span{
+      &:last-child{
+        display: block;
+      }
+    }
+    &:hover {
+      color: var(--c-teritary);
+      background-color: var(--c-nav-hover);
+    }
+    &:active {
+      color: var(--c-teritary);
+      background-color: var(--c-nav-active);
+    }
+  }
+}

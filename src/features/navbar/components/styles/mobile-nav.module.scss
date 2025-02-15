@@ -1,0 +1,19 @@
+@use "abstract/media-query.scss" as *;
+.container{
+    height: 59px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+    background-color: var(--c-background);
+    position: fixed;
+    .nav_item_text{
+        font-size: var(--fs-pico);
+    }
+    @include mq("small"){
+        display: none;
+    }
+}
