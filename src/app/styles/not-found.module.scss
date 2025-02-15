@@ -4,6 +4,10 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    svg{
+        height: 50%;
+        width: 50%;
+    }
     gap: 10px;
     h1{
         font-size: var(--fs-milli);
