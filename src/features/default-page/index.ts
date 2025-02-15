@@ -1,1 +1,1 @@
-export {default as DefaultPage} from "./components/default-page"
+export { default as DefaultPage } from "./components/default-page";
