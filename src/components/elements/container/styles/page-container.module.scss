@@ -1,0 +1,12 @@
+@use "abstract/media-query.scss" as *;
+.container{
+    @include mq("xx-large"){
+        padding: 0 2em;
+    }
+    @include mq("medium"){
+        padding: 0 0.8em;
+    }
+    @include mq("small"){
+        padding: 0 0.8em;
+    }
+}

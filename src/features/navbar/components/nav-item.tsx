@@ -9,6 +9,8 @@ interface INavItem {
 	isActive: boolean;
 }
 const NavItem = ({ text, icon, href, isActive }: INavItem) => {
+	console.log(isActive);
+
 	return (
 		<Link
 			aria-label="Menu Link"

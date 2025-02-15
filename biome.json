@@ -11,7 +11,8 @@
   },
   "formatter": {
     "enabled": true,
-    "indentStyle": "tab"
+    "indentStyle": "tab",
+    "indentWidth": 2
   },
   "organizeImports": {
     "enabled": true
@@ -36,7 +37,6 @@
     "enabled": true,
     "rules": {
       "style": {
-        
         "noNamespace": "error",
         "noUnusedTemplateLiteral": "error",
         "noVar": "error",
@@ -50,7 +50,6 @@
       },
       "recommended": true,
       "suspicious": {
-        
         "noDebugger": "error",
         "noConsoleLog": "info"
       }

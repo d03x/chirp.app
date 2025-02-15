@@ -1,7 +1,7 @@
-import { MouseEventHandler, ReactNode } from "react";
+import { ReactNode } from "react";
 
 export interface IAuthButtonProps {
-    icon: ReactNode,
-    text: string,
-    onClick?: () => void,
+	icon: ReactNode;
+	text: string;
+	onClick?: () => void;
 }

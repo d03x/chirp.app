@@ -9,4 +9,8 @@
   .auth-card{
     margin-top: 0.75em;
   }
+  display: none;
+  @include mq('large'){
+    display: block;
+  }
 }

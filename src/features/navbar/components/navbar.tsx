@@ -15,7 +15,7 @@ const Navbar = () => {
 			<NavItem text="Home" href="/" icon={<HomeIcon />} isActive={false} />
 			<NavItem
 				text="Explore"
-				href="/"
+				href="/explore"
 				icon={<ExploreIcon />}
 				isActive={false}
 			/>

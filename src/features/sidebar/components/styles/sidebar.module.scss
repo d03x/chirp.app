@@ -1,5 +1,6 @@
 @use "abstract/media-query.scss" as *;
 .container {
+
   .footer {
     margin-top: 1.5em;
     border-top: 1px solid var(--c-border);
@@ -14,7 +15,7 @@
     color: var(--c-tertiary);
     column-gap: 0.75em;
     padding: 0.5em 1em;
-    span{
+    span {
       font-size: var(--fs-pico);
       margin: 2px 0;
     }
@@ -37,10 +38,13 @@
   height: 100dvh;
   overflow-y: auto;
   grid-template-rows: max-content 1fr auto;
-  display: grid;
   border-right: 1px solid var(--c-border);
   max-height: 100vh;
   top: 0;
+  display: none;
+  @include mq("small") {
+    display: grid;
+  }
   .navbar {
   }
   .logo {
@@ -52,6 +56,6 @@
       align-items: start;
       justify-content: start;
     }
-    margin-bottom: 0.2em;
+    margin-bottom: 0.6em;
   }
 }

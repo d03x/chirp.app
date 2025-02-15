@@ -27,7 +27,7 @@ body {
     }
     @include mq("xx-large") {
       margin: auto;
-      max-width: 1365px;
+      max-width: 1265px;
       grid-template-columns: 260px auto 400px;
     }
   }

@@ -1,0 +1,13 @@
+.container {
+  margin-top: 1.5em;
+  .title {
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: var(--c-primary);
+    font-weight: var(--fw-700);
+   
+  }
+  .subtitle {
+    font-size: var(--fs-milli);
+  }
+}
