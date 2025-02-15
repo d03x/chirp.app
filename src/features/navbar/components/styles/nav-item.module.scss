@@ -14,7 +14,6 @@
   &:hover {
     color: var(--c-primary);
   }
-  
 
   width: 90%;
   padding: 0.4em;
@@ -42,14 +41,14 @@
       }
     }
   }
-  span{
-    &:last-child{
+  span {
+    &:last-child {
       display: none;
     }
   }
   @include mq("small") {
-    span{
-      &:last-child{
+    span {
+      &:last-child {
         display: block;
       }
     }

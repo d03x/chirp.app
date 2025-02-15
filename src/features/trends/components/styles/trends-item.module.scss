@@ -1,0 +1,42 @@
+.container {
+  .sparkline {
+    width: 48px;
+  }
+  display: flex;
+  padding: 0.3em 0;
+  align-items: center;
+  justify-content: space-between;
+  .detail {
+    gap: 2px;
+    font-size: var(--fs-nano);
+    display: flex;
+    flex-direction: column;
+    .hastag {
+      color: var(--c-teraiary);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+      margin-bottom: 0.2em;
+      font-weight: var(--fw-700);
+      font-size: var(--fs-nano);
+    }
+    .item_detail {
+      span {
+        display: block;
+        &:first-child {
+          font-size: var(--fs-pico);
+          font-weight: var(--fw-700);
+        }
+      }
+      display: flex;
+      align-items: center;
+      column-gap: 0.2em;
+    }
+
+    .item {
+    }
+    .statistic {
+    }
+  }
+}

@@ -15,7 +15,6 @@ export default function AuthForm() {
 			</div>
 			<div className={styles.buttons}>
 				<AuthBtn text="Login dengan Google" icon={<BsGoogle />} />
-				<AuthBtn text="Login dengan Facebook" icon={<BsFacebook />} />
 			</div>
 			<div className={styles.terms}>
 				By signing up, you agree to the <Link href="/">Terms of Service</Link>{" "}

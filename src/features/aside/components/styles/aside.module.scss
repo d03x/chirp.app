@@ -1,5 +1,9 @@
 @use "abstract/media-query" as *;
 .container {
+  .trends{
+    margin-top: 1em;
+    padding: 0.8em;
+  }
   position: sticky;
   top: 0;
   max-height: 100vh;
