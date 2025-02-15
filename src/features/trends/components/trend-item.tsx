@@ -15,7 +15,7 @@ const TrendItem: React.FC<ITrendItemProps> = (props) => {
         </div>
       </div>
       <div className={styles.sparkline}>
-        <Sparklines data={[100, 0, 8, 40, 8, 150]} limit={6} width={50} height={28}>
+        <Sparklines data={[32, 0, 33, 40, 50, 150]} limit={6} width={50} height={28}>
             <SparklinesCurve style={{ fill:"none" }} color="#818cf8"/>
         </Sparklines>
       </div>

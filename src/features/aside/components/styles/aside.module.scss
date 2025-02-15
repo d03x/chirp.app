@@ -1,8 +1,9 @@
 @use "abstract/media-query" as *;
 .container {
-  .trends{
+  .trends,
+  .auth-card{
     margin-top: 1em;
-    padding: 0.8em;
+    padding: 0 1.5em;
   }
   position: sticky;
   top: 0;
